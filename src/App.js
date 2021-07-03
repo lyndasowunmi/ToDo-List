@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -21,11 +20,21 @@ function App() {
   }
 
   function deleteTodo(id) {
-    const updatedTodos = [...todos].filter((todo) => todo.id != id)
+    const updatedTodos = [...todos].filter((todo) => todo.id !== id)
 
     setTodos(updatedTodos)
   }
 
+
+  function toggleCompleted(id) {
+    const updatedTodos = [...todos].map((todo) => {
+      if (todo.id === id) {
+        todo.completed = !todo.completed
+      }
+      return todo
+    })
+    setTodos(updatedTodos)
+  }
 
   return (
     <div className="App">
@@ -36,6 +45,7 @@ function App() {
       {todos.map((todo) => <div key={todo.id}>
         <div>{todo.text}</div>
         <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+        <input type="radio" onChange={() => toggleCompleted(todo.id)} checked={todo.completed} />
 
       </div>)}
     </div>
