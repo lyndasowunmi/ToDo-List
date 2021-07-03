@@ -20,6 +20,13 @@ function App() {
     setTodo("")
   }
 
+  function deleteTodo(id) {
+    const updatedTodos = [...todos].filter((todo) => todo.id != id)
+
+    setTodos(updatedTodos)
+  }
+
+
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
@@ -28,7 +35,7 @@ function App() {
       </form>
       {todos.map((todo) => <div key={todo.id}>
         <div>{todo.text}</div>
-        <button onClick={() => deletTodo(todo.id)}>Delete</button>
+        <button onClick={() => deleteTodo(todo.id)}>Delete</button>
 
       </div>)}
     </div>
