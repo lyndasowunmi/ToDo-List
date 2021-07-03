@@ -1,11 +1,22 @@
 # ToDo List
- A website that tracks the daily infections, recoveries, and deaths from the coronavirus. It displays global and country specific data with the aid of charts.
 
-Features:
+ ToDo List is a simple web/mobile application to save your daily tasks in order to stay organized.
 
-* Built using CSS, JavaScript, React, and TypeScript.
-* Mobile-responsive
-* Data is.
+## Features:
+
+* Add new task
+* Edit task
+* Delete single/all tasks
+* Mobile responsive
+* Local storage backup
+
+### Tools:
+* CSS
+* JavaScript
+* React
+* TypeScript
+
+#### App demo
 
 
 
