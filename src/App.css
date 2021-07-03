@@ -1,17 +1,14 @@
+/* TYPOGRAPHY */
 h1 {
-  text-align: center;
   margin-bottom: 2px;
+  text-align: center;
 }
 
-#todo-list {
-  width: 500px;
-  margin: 60px auto;
-}
-
+/* FORM */
 form, .todo {
   border: 1px solid rgb(212, 208, 208);
-  padding: 10px 20px 5px 20px;
   margin-bottom: 0px;
+  padding: 20px 20px 5px 20px;
 }
 
 form {
@@ -19,82 +16,81 @@ form {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0px;
+  padding-bottom: 15px;
 }
 
 form input {
-  padding: 4px 8px;
   flex-grow: 1;
-  margin-right: 16px;
   margin-bottom: 5px;
+  margin-right: 16px;
+  padding: 4px 8px;
 }
 
-.todo {
-  display: flex;
-  flex-direction: column;
-}
-
-.todo:nth-child(even) {
-  background-color: rgb(222, 224, 226) ;
-}
-
+/* BUTTON */
 button {
-  font-size: 16px;
   background-color: rgb(100, 94, 94);
-  color: #fff;
   border-radius: 8px;
   border: none;
-  padding: 8px 16px;
+  color: #fff;
   cursor: pointer;
+  font-size: 16px;
   margin:5px 5px;
+  padding: 8px 16px;
 }
 
-
-button:hover {
-  background-color: rgb(112, 98, 98);
+button:hover, button:active {
+  background-color: rgb(133, 117, 117);
 }
 
-button:active {
-  background-color: rgb(112, 98, 98);
-}
-
-button:focus {
-  outline: 0;
-}
-
+/* INPUT FIELDS */
 input[type='text'] {
   font-size: 20px; 
 }
 
-.todo input[type="radio"] {
+ .todo input[type="radio"] {
   transform: scale(1.1) translateY(1px);
   cursor: pointer;
+  margin-right: 10px;
+
 }
 
 .todo-text input {
   padding: 4px;
 }
 
+/* INPUT ACTIONS */
+.todo {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 .todo-text {
+  flex-grow: 1;
   font-size: 24px;
   font-weight: 600;
-  line-height: 10px;
-  margin: 5px 0 0 30px;
-  
+  line-break: auto;
+  line-height: 15px;
+  overflow-wrap: break-word; 
+  overflow: auto;
 }
-
-.todo-completed {
-  display: inline-block;
-  margin: 10px 0;
-}
-
-.todo-actions {
-  display: flex;
-  float: right;
-  align-items: right;
-  margin-top: 0;
-  
-}
-
 #todo-Edits {
   margin-bottom: 10px;
 }
+
+#todo-list {
+  margin: 60px auto;
+  width: 500px;
+}
+
+.todo:nth-child(even) {
+  background-color: rgb(222, 224, 226) ;
+}
+
+.todo-actions {
+  display:flex;
+  float: right;
+  margin-top: 6px;
+}
+
+
