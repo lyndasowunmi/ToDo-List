@@ -67,20 +67,21 @@ input[type='text'] {
 
 .todo-text {
   flex-grow: 1;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   line-break: auto;
   line-height: 15px;
   overflow-wrap: break-word; 
   overflow: auto;
 }
+
 #todo-Edits {
   margin-bottom: 10px;
 }
 
 #todo-list {
   margin: 60px auto;
-  width: 500px;
+  width: 400px;
 }
 
 .todo:nth-child(even) {
@@ -93,4 +94,9 @@ input[type='text'] {
   margin-top: 6px;
 }
 
+@media only screen and (min-width: 768px) {
+  #todo-list {
+    width: 700px;
+  }
+}
 

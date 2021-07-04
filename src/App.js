@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-
+export const addTodo = (list, item) => [...list, item] /* JEST testing */
 
 function App() {
   const [todos, setTodos] = React.useState([]);
@@ -26,7 +26,7 @@ function App() {
   }, [todos]);
 
 
-  /* Sunbmit Task Function */
+  /* Submit Task Function */
   function handleSubmit(e) {
     e.preventDefault()
 
@@ -72,14 +72,14 @@ function App() {
 
   return (
     <div id="todo-list">
-      <h1 className="inputValue" for="input">My To Do List</h1>
+      <h1>My To Do List</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" onChange={(e) => setTodo(e.target.value)} value={todo} id="input" name="input" />
+        <input type="text" autoFocus onChange={(e) => setTodo(e.target.value)} value={todo} id="input" name="input" />
         <button type="submit">Add To List</button>
       </form>
 
       {todos.map((todo) => <div key={todo.id} className="todo">
-        <input id="todo-radio-button" type="radio" onChange={() => toggleCompleted(todo.id)} checked={todo.completed} />
+        <input type="radio" onChange={() => toggleCompleted(todo.id)} checked={todo.completed} />
         {todoEditing === todo.id ?
           (<input id="todo-Edits" type="text" onChange={(e) => setEditingText(e.target.value)} value={editingText} />)
           :
