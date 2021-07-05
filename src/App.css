@@ -98,7 +98,7 @@ input[type="text"] {
   overflow: auto;
 }
 
-.todo:nth-child(even) {
+.todo:nth-child(odd) {
   background-color: var(--color-nth-child);
 }
 
