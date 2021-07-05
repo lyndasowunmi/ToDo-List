@@ -1,57 +1,73 @@
 /* TYPOGRAPHY */
-h1 {
-  margin-bottom: 2px;
+:root {
+  --color-primary: rgb(99, 92, 92);
+  --color-secondary: rgb(133, 117, 117);
+  --color-accent: lightsalmon;
+  --color-headings: brown;
+  --color-body: #fff;
+  --color-nth-child: rgb(222, 224, 226);
+  --color-border: rgb(212, 208, 208);
+  --border-radius: 30px;
+}
+
+h2 {
+  color: var(--color-headings);
+  margin: 0 0 1.5px 0;
   text-align: center;
 }
 
 /* FORM */
-form, .todo {
-  border: 1px solid rgb(212, 208, 208);
+form,
+.todo {
+  border: 1px solid var(--color-border);
   margin-bottom: 0px;
   padding: 20px 20px 5px 20px;
 }
 
 form {
-  background-color: lightsalmon ;
+  background-color: var(--color-accent);
   display: flex;
   justify-content: space-between;
   margin-bottom: 0px;
-  padding-bottom: 15px;
+  padding: 0 0 5px 10px;
 }
 
 form input {
   flex-grow: 1;
-  margin-bottom: 5px;
-  margin-right: 16px;
+  margin: 0 10px 10px 35px;
+  outline: none;
   padding: 4px 8px;
 }
 
 /* BUTTON */
 button {
-  background-color: rgb(100, 94, 94);
+  background-color: var(--color-primary);
   border-radius: 8px;
   border: none;
-  color: #fff;
+  color: var(--color-body);
   cursor: pointer;
   font-size: 16px;
-  margin:5px 5px;
-  padding: 8px 16px;
+  padding: 9px 10px;
 }
 
-button:hover, button:active {
-  background-color: rgb(133, 117, 117);
+button:hover,
+button:active {
+  background-color: var(--color-secondary);
+}
+
+.todo button {
+  margin: 1px 10px 9px 0;
 }
 
 /* INPUT FIELDS */
-input[type='text'] {
-  font-size: 20px; 
+input[type="text"] {
+  font-size: 20px;
 }
 
- .todo input[type="radio"] {
+.todo input[type="radio"] {
   transform: scale(1.1) translateY(1px);
   cursor: pointer;
-  margin-right: 10px;
-
+  margin: 3px 10px 0 20px;
 }
 
 .todo-text input {
@@ -62,7 +78,7 @@ input[type='text'] {
 .todo {
   display: flex;
   justify-content: space-between;
-  
+  padding: 10px 0 0 0;
 }
 
 .todo-text {
@@ -71,7 +87,7 @@ input[type='text'] {
   font-weight: 500;
   line-break: auto;
   line-height: 15px;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
   overflow: auto;
 }
 
@@ -80,23 +96,28 @@ input[type='text'] {
 }
 
 #todo-list {
-  margin: 60px auto;
-  width: 400px;
+  margin: 30px auto;
+  width: 450px;
 }
 
 .todo:nth-child(even) {
-  background-color: rgb(222, 224, 226) ;
+  background-color: var(--color-nth-child);
 }
 
 .todo-actions {
-  display:flex;
+  display: flex;
   float: right;
   margin-top: 6px;
 }
 
 @media only screen and (min-width: 768px) {
+  input[type="text"] {
+    width: 450px;
+  }
+  form input {
+    margin-right: 20px;
+  }
   #todo-list {
-    width: 700px;
+    width: 680px;
   }
 }
-

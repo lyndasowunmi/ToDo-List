@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-export const addTodo = (list, item) => [...list, item] /* JEST testing */
+//export const addTodo = (list, item) => [...list, item] /* JEST testing 1*/
+export const addTodo = (todos, newTodo) => [...todos].concat(newTodo) /* JEST testing 2 -- handleSubmit function */
+
 
 function App() {
   const [todos, setTodos] = React.useState([]);
@@ -71,17 +73,19 @@ function App() {
   }
 
   return (
-    <div id="todo-list">
-      <h1>My To Do List</h1>
+    <div id="todo-list"> 
       <form onSubmit={handleSubmit}>
-        <input type="text" autoFocus onChange={(e) => setTodo(e.target.value)} value={todo} id="input" name="input" />
+        <label for="input">
+         <h2>My To Do List</h2>
+          <input type="text" autoFocus onChange={(e) => setTodo(e.target.value)} value={todo} id="input" name="input" />
         <button type="submit">Add To List</button>
+          </label>
       </form>
 
       {todos.map((todo) => <div key={todo.id} className="todo">
         <input type="radio" onChange={() => toggleCompleted(todo.id)} checked={todo.completed} />
         {todoEditing === todo.id ?
-          (<input id="todo-Edits" type="text" onChange={(e) => setEditingText(e.target.value)} value={editingText} />)
+          (<input id="todo-Edits" type="text" placeholder="Edit task..." onChange={(e) => setEditingText(e.target.value)} value={editingText} />)
           :
           (<div className="todo-text">{todo.text}</div>)}
 

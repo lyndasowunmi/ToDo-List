@@ -1,23 +1,23 @@
-import { addTodo } from './App'
+import { addTodo} from './App'
 
 
 /* JEST testing */
 describe('addTodo', () => {
-  it('add a new todo to the BOTTOM of the list', () => {
+  it('adds a new todo to the BOTTOM of the list', () => {
     const todos = [
-      { id: 1, name: 'one', completed: false },
-      { id: 2, name: 'two', completed: false }
+      { id: new Date().getTime(), text: 'todoone', completed: false },
+      { id: new Date().getTime(), text: 'todotwo', completed: false }
     ]
 
-    const newTodo = { id: 3, name: 'three', completed: false }
+    const newTodo = { id: new Date().getTime(), text: 'todothree', completed: false }
     const expected = [
-
-      { id: 1, name: 'one', completed: false },
-      { id: 2, name: 'two', completed: false },
-      { id: 3, name: 'three', completed: false }
+      { id: new Date().getTime(), text: 'todoone', completed: false },
+      { id: new Date().getTime(), text: 'todotwo', completed: false },
+      { id: new Date().getTime(), text: 'todothree', completed: false }
 
     ]
     const result = addTodo(todos, newTodo)
     expect(result).toEqual(expected)
   })
-})
+}) 
+
