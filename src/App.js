@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-//export const addTodo = (list, item) => [...list, item] /* JEST testing 1*/
 export const addTodo = (todos, newTodo) => [...todos].concat(newTodo) /* JEST testing 2 -- handleSubmit function */
 
 

@@ -93,7 +93,7 @@ input[type="text"] {
   font-size: 18px;
   font-weight: 500;
   line-break: auto;
-  line-height: 15px;
+  line-height: 18px;
   overflow-wrap: break-word;
   overflow: auto;
 }
@@ -113,14 +113,24 @@ input[type="text"] {
 }
 
 #todo-list {
-  margin: 30px auto;
-  width: 450px;
+  justify-content: center;
+  margin: 10px auto;
+  width: 380px;
 }
 
 #todo-save {
   background: var(--color-accent);
   border-radius: 8px;
   color: var(--color-headings);
+  margin-left: 7px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  input[type="text"] {
+    margin: 0 5px 5px 0;
+    width: 230px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
