@@ -1,9 +1,12 @@
-# ToDo List
+# [ToDo List](http://portfoliobylynda.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/06f756f9-ea0e-4bf4-97d8-0220a15b6dd5/deploy-status)](https://app.netlify.com/sites/to-do-tasklist/deploys)
+
+![ToDo-List - GIF](https://github.com/lyndasowunmi/ToDo-List/blob/46472e80affb202e0ecf41f0b54f689a96977d50/ToDo-List%20-%20GIF.gif)
 
  ToDo List is a simple web/mobile application to save your daily tasks in order to stay organized.
 
 ## Features:
-
 * Add new task
 * Edit task
 * Delete single/all tasks
@@ -17,35 +20,11 @@
 * TypeScript
 
 #### App demo
+https://to-do-tasklist.netlify.app/
 
 
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more in
 
 
 
