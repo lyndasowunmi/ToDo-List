@@ -41,13 +41,12 @@ form input {
 
 /* BUTTON */
 button {
-  background-color: var(--color-primary);
-  border-radius: 8px;
   border: none;
-  color: var(--color-body);
+  color: black;
   cursor: pointer;
-  font-size: 16px;
-  padding: 9px 10px;
+  font-size: 15px;
+  font-weight: 550;
+  padding: 8px 10px 7px 10px;
 }
 
 button:hover,
@@ -55,7 +54,15 @@ button:active {
   background-color: var(--color-secondary);
 }
 
+form button {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-body);
+  margin-left: 0.1px;
+}
+
 .todo button {
+  background-color: inherit;
   margin: 1px 10px 9px 0;
 }
 
@@ -65,9 +72,9 @@ input[type="text"] {
 }
 
 .todo input[type="radio"] {
-  transform: scale(1.1) translateY(1px);
   cursor: pointer;
   margin: 3px 10px 0 20px;
+  transform: scale(1.1) translateY(1px);
 }
 
 .todo-text input {
@@ -91,15 +98,6 @@ input[type="text"] {
   overflow: auto;
 }
 
-#todo-Edits {
-  margin-bottom: 10px;
-}
-
-#todo-list {
-  margin: 30px auto;
-  width: 450px;
-}
-
 .todo:nth-child(even) {
   background-color: var(--color-nth-child);
 }
@@ -110,13 +108,26 @@ input[type="text"] {
   margin-top: 6px;
 }
 
+#todo-edits {
+  margin-bottom: 10px;
+}
+
+#todo-list {
+  margin: 30px auto;
+  width: 450px;
+}
+
+#todo-save {
+  background: var(--color-accent);
+  border-radius: 8px;
+  color: var(--color-headings);
+}
+
 @media only screen and (min-width: 768px) {
   input[type="text"] {
     width: 450px;
   }
-  form input {
-    margin-right: 20px;
-  }
+
   #todo-list {
     width: 680px;
   }
