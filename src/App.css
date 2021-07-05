@@ -114,8 +114,8 @@ input[type="text"] {
 
 #todo-list {
   justify-content: center;
-  margin: 10px auto;
-  width: 380px;
+  margin: 5px auto;
+  width: 350px;
 }
 
 #todo-save {
@@ -129,7 +129,7 @@ input[type="text"] {
 @media only screen and (max-width: 768px) {
   input[type="text"] {
     margin: 0 5px 5px 0;
-    width: 230px;
+    width: 200px;
   }
 }
 
