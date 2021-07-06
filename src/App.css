@@ -71,7 +71,7 @@ input[type="text"] {
   font-size: 20px;
 }
 
-.todo input[type="radio"] {
+.todo input[type="checkbox"] {
   cursor: pointer;
   margin: 3px 10px 0 20px;
   transform: scale(1.1) translateY(1px);
@@ -114,8 +114,8 @@ input[type="text"] {
 
 #todo-list {
   justify-content: center;
-  margin: 5px auto;
-  width: 350px;
+  margin: auto;
+  width: 375px;
 }
 
 #todo-save {
