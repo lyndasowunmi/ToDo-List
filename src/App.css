@@ -128,8 +128,8 @@ input[type="text"] {
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
   input[type="text"] {
-    margin: 0 5px 5px 0;
-    width: 200px;
+    margin: 0 5px 5px 5px;
+    width: 210px;
   }
 }
 
