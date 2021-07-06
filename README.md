@@ -1,4 +1,4 @@
-Link # [ToDo List](http://portfoliobylynda.netlify.app/)
+ # [ToDo List](http://portfoliobylynda.netlify.app/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/06f756f9-ea0e-4bf4-97d8-0220a15b6dd5/deploy-status)](https://app.netlify.com/sites/to-do-tasklist/deploys)
 
