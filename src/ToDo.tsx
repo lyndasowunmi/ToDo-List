@@ -71,17 +71,6 @@ function ToDo() {
     setEditingText(""); /* resets editing */
   }
 
-/* Completed strikethrough*/
-
- function crossLine(event) {
-      const element = event.target;
-      element.classList.toggle("crossed-line");
-  };
-
-  
-  
-
-  
 
   return (
     <div id="todo-list">
