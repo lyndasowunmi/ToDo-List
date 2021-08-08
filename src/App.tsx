@@ -21,9 +21,9 @@ const LoginForm = Userfront.build({
 //const PasswordResetForm = Userfront.build({
  // toolId: "nabkna",
 //});
-const LogoutButton = Userfront.build({
-  toolId: "klodan",
-});
+//const LogoutButton = Userfront.build({
+//  toolId: "klodan",
+//});
 
 
 
@@ -121,7 +121,7 @@ function Dashboard() {
     }
 
     // If the user is logged in, show the dashboard
-    const userData = JSON.stringify(Userfront.user, null, 2);
+    //const userData = JSON.stringify(Userfront.user, null, 2);
     return (
           <div > <button type="button" id="log-out-button" className="btn btn-danger" onClick={Userfront.logout} ><Link  id="log-out-button" to="/login">Log out</Link></button><div>
           </div>< ToDo /> </div>
